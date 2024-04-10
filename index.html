@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="images/yas_verne_ロゴ_p5.png" type="image/x-icon" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="images/yas_verne_ロゴ_p5.png" type="image/x-icon"/>
   <title>CSE110 Team35</title>
 </head>
 
@@ -35,8 +35,8 @@
 
     <section class="unfinished business from last meeting">
         <h3>Shota's Introduction</h3>
-        <img src="images/ビジネス写真.jpg" width="300">
-        <span>
+        <img src="images/ビジネス写真.jpg" alt="Shota_picture" width="300">
+        <div>
             <ul>
                 <li><a href="https://www.facebook.com/shota.yasuraoka">Shota Yasuraoka</a></li>
                 <li><strong>Team35 Leader</strong></li>
@@ -44,23 +44,23 @@
                 <li><em>Computer Engineering Major</em></li>
             </ul>
             <P>Hello! I'm Shota.<br>Nice to meet you!</P>
-        </span>
+        </div>
     </section>
 
     <section class="new business">
         <h3>Brainstorming for the App</h3>
         <div>
             <ul>
-                <ul>
+                <li>
                     <h4><i>Shota</i></h4>
                     <li>Gererative AI app</li>
                     <li>Matching app</li>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <h4><i>Allen</i></h4>
                     <li>Fintech app</li>
                     <li>Game app</li>
-                </ul>
+                </li>
             </ul>
         </div>
     </section>
@@ -75,8 +75,10 @@
     </section>
 
     <section class="MTG pictures">
-        <h3>MTG picture</h3>
-        <img src="images/名称未設定17.png" width="500">
+        <span>
+            <h3>MTG picture</h3>
+            <img src="images/名称未設定17.png" alt="MTG_picture" width="500">
+        </span>
     </section>
 
     <section class="MTG survey">
@@ -88,13 +90,13 @@
                 <input type="text" id="name" name="name" required><br><br>
 
                 <label for="attended">Did you attend the meeting?</label><br>
-                <input type="radio" id="attended_yes" name="attended" value="yes">
+                <input type="radio" id="attended" name="attended_yes" value="yes">
                 <label for="attended_yes">Yes</label>
-                <input type="radio" id="attended_no" name="attended" value="no">
+                <input type="radio" id="attended" name="attended_no" value="no">
                 <label for="attended_no">No</label><br><br>
 
                 <label for="evaluation">Evaluation:</label><br>
-                <input list="evaluation" id="evaluation_input">
+                <input list="evaluation" id="evaluation">
                 <datalist id="evaluation">
                     <option value="Good">
                     <option value="Bad">
@@ -121,8 +123,8 @@
             <source src="audio%20%26%20video/New%20Recording%202.m4a" type="audio/mp4">
         </audio>
         
-        <video controls>
-            <source src="audio%20%26%20video/IMG_1856.MOV" type="video/mp4" width="500">
+        <video controls width="500">
+            <source src="audio%20%26%20video/IMG_1856.MOV" type="video/mp4">
         </video>
     </div>
   </footer>
