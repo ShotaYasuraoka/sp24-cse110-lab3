@@ -84,28 +84,35 @@
     <section class="MTG survey">
         <form method="post">
             <fieldset>
-                <h4>MTG feedback survey</h4>
-                <label>Name:</label>
+                <legend>Feedback Form</legend>
+
+                <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
 
-                <label>Attended?</label>
-                <select name="attendance">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select><br><br>
+                <label for="attended">Did you attend the meeting?</label><br>
+                <input type="radio" id="attended_yes" name="attended" value="yes">
+                <label for="attended_yes">Yes</label>
+                <input type="radio" id="attended_no" name="attended" value="no">
+                <label for="attended_no">No</label><br><br>
 
-                <input list="evaluation"/>
+                <label for="evaluation">Evaluation:</label><br>
+                <input list="evaluation" id="evaluation_input">
                 <datalist id="evaluation">
                     <option value="Good">
                     <option value="Bad">
-                </datalist>
+                </datalist><br><br>
 
                 <label for="comments">Comments:</label><br>
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
 
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="task_completion">Task Completion:</label><br>
+                <input type="checkbox" id="task_completion" name="task_completion"><br><br>
+
                 <button type="submit">Submit</button>
             </fieldset>
-
         </form>
     </section>
   </main>
