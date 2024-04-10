@@ -85,10 +85,25 @@
         <form method="post">
             <fieldset>
                 <h4>MTG feedback survey</h4>
-                <label for="name">Name:</label>
+                <label>Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
 
-                
+                <label>Attended?</label>
+                <select name="attendance">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+
+                <input list="evaluation"/>
+                <datalist id="evaluation">
+                    <option value="Good">
+                    <option value="Bad">
+                </datalist>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Submit</button>
             </fieldset>
 
         </form>
