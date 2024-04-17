@@ -7,14 +7,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: rgb(0,0,0);
+    background-color: hsl(100,100,100);
 }
 
 /* ヘッダーセクションのスタイリング */
 header {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: color(srgb 0 0.5 1 / 1);;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -33,7 +33,7 @@ section {
 
 /* タイトルとサブタイトル */
 h1, h2, h3 {
-    margin-bottom: 10px;
+    margin-bottom: 1cm;
 }
 
 /* ナビゲーションとリスト */
@@ -43,14 +43,14 @@ nav ol {
 }
 
 nav ol li {
-    background: #e9ecef;
+    background: color-mix(in srgb, #ff0000 50%, #00ff00 50%);;
     padding: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 5mm;
 }
 
 /* 画像のスタイリング */
 img {
-    max-width: 100%;
+    max-width: 1vw;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -58,9 +58,9 @@ img {
 
 /* フォームのスタイリング */
 form {
-    margin-top: 20px;
+    margin-top: 0.1vh;
     background: #f8f8f8;
-    padding: 20px;
+    padding: 0.5em;
     border-radius: 8px;
 }
 
