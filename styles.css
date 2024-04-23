@@ -15,8 +15,12 @@ body {
 header {
     background-color: color(srgb 0 0.5 1 / 1);;
     color: white;
+    text-decoration: dashed;
+    text-align: center;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* メインセクションとセクション内のデザイン */
@@ -37,18 +41,31 @@ section {
 /* タイトルとサブタイトル */
 h1, h2, h3 {
     margin: 0cm 0cm 1cm 0cm;
+    position: static;
+}
+
+h1 {
+    position: absolute;
+    top: 40px; left: 40px;
+    flex-grow: 2;
+}
+
+h3 {
+    position: static;
+    order: 1;
+    flex-grow: 3;
 }
 
 /* ナビゲーションとリスト */
 nav ol {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 0 0;
     margin: auto
 }
 
 nav ol li {
     background: color-mix(in srgb, #ff0000 50%, #00ff00 50%);;
-    padding: 8px;
+    padding-top: 8px;
     margin-bottom: 5mm;
 }
 
@@ -72,11 +89,11 @@ input[type="text"],
 input[type="date"],
 input[type="radio"],
 textarea {
-    width: 100%;
+    min-width: 100%;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    display: block;
+    display: inline-block;
 }
 
 button {
@@ -90,6 +107,10 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+
+button:active {
+    background-color: #ffffff;
 }
 
 /* フッターのスタイリング */
@@ -108,4 +129,40 @@ footer {
     body {
         background-color: #ccc;
     }
+}
+
+.new_business {
+    display: grid;              
+    grid-template-columns: 1fr; 
+    gap: 20px;                  
+    padding: 20px;              
+    background-color: #f9f9f9;  
+    border-radius: 8px;         
+}
+
+.new_business > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;                            
+}
+
+.new_business h3 {
+    grid-column: 1 / -1;       
+}
+
+.new_business h4 {
+    margin-top: 0;             
+    color: #333;               
+}
+
+.new_business ul {
+    list-style: none;          
+    padding: 0;                
+}
+
+.new_business li {
+    background-color: #ffffff; 
+    border: 1px solid #ddd;    
+    padding: 10px;             
+    border-radius: 5px;        
 }
