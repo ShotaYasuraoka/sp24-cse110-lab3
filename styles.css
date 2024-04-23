@@ -5,7 +5,7 @@
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jersey 15', sans-serif;
     line-height: 1.6;
     color: rgb(0,0,0);
     background-color: hsl(100,100,100);
@@ -166,3 +166,12 @@ footer {
     padding: 10px;             
     border-radius: 5px;        
 }
+
+@font-face {
+    font-family: 'Jersey 15';
+    src: url('/Jersey15-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
