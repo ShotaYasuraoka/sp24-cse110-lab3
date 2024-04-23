@@ -8,7 +8,7 @@ body {
     font-family: 'Jersey 15', sans-serif;
     line-height: 1.6;
     color: rgb(0,0,0);
-    background-color: hsl(100,100,100);
+    background-color: hsl(100,100%,100%);
 }
 
 /* ヘッダーセクションのスタイリング */
@@ -33,18 +33,21 @@ section {
     margin-bottom: 20px;
     padding: 20px;
     border-style: groove;
-    border-color: red;
     border-width: 2px;
     border-radius: 8px;
 }
 
+section.new_business {
+    border-color: red;
+}
+
 /* タイトルとサブタイトル */
-h1, h2, h3 {
+h1 ~ h2 ~ h3 {
     margin: 0cm 0cm 1cm 0cm;
     position: static;
 }
 
-h1 {
+h1 + h2 {
     position: absolute;
     top: 40px; left: 40px;
     flex-grow: 2;
@@ -54,6 +57,10 @@ h3 {
     position: static;
     order: 1;
     flex-grow: 3;
+}
+
+h3:has(+ h4) {
+    padding: 0 0 0 0;
 }
 
 /* ナビゲーションとリスト */
@@ -103,10 +110,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
 
-button:hover {
-    background-color: #218838;
+    /* Nested hover selector */
+    &:hover {
+        background-color: #218838;
+    }
 }
 
 button:active {
